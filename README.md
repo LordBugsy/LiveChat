@@ -10,7 +10,7 @@ First of all, make sure you have [Node.js](https://nodejs.org/en/download/packag
 Then, do the following steps:
 ```bash
 # Clone the git repository
-git clone
+git clone https://github.com/LordBugsy/LiveChat
 
 # Then run the application
 npm start
