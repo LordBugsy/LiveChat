@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* for copyright text */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap'); /* for the logo */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* the font for the other text */
+
+* {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --backgroundColour: rgb(60, 60, 93);
+}
+
+body, html {
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--backgroundColour);
+}
+
+.copyrightContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2em;
+    z-index: 15;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.554);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+

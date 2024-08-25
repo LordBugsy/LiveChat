@@ -1,0 +1,154 @@
+.liveChatContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    background-color: rgb(26, 26, 46);
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    box-shadow: 0px 0px 10px 0px rgb(29, 29, 44);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 10px 20px;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+/* messagesToRender */
+.liveChat {
+    margin-top: 5em;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color: rgb(69, 69, 100);
+    padding: 15px 30px;
+    scrollbar-color: rgb(69, 69, 100) rgb(26, 26, 46);
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.messageContainer .profileImageContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.messageContainer .messageBox {
+    margin-left: 60px;
+    margin-top: -10px;
+}
+
+.messageContainer .image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.messageContainer .authorId {
+    font-size: 0.5em;
+    text-align: center;
+    color: white;
+}
+
+.messageContainer .messageAuthor {
+    color: rgb(255, 255, 255);
+}
+
+.messageContainer .messsage {
+    color: rgb(168, 165, 165);
+    font-size: 1.2em;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+
+.noMessages {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+/* inputText */
+
+.inputContainer {
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    height: 50px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 20px;
+    bottom: 30px;
+    overflow: hidden;
+}
+
+.input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    color: white;
+}
+
+.input::placeholder {
+    color: rgb(123, 123, 123);
+}
+
+.button {
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.send {
+    background-color: rgb(93, 202, 93);
+    color: white;
+}
+
+.send:hover {
+    background-color: rgb(38, 164, 38);
+}
+
+.disabled {
+    background-color: rgb(123, 123, 123);
+    cursor: default;
+}
+
+@media only screen and (max-width: 785px) {
+    .inputContainer {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .inputContainer .input {
+        width: 30%;
+    }
+}
